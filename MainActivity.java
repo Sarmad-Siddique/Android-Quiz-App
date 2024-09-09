@@ -69,12 +69,8 @@ public class MainActivity extends AppCompatActivity {
 
                 allQuestions[currentQuestion].setAnswered(true);
 
-                if (score <= 0) {
-                    return;
-                }
-
                 score--;
-                scoreView.setText("Score: " + Integer.toString(score));
+                setScore();
             }
         });
         btnConfirm.setOnClickListener(new View.OnClickListener() {
@@ -88,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 allQuestions[currentQuestion].setAnswered(true);
                 validateAnswer();
-                scoreView.setText("Score: " + Integer.toString(score));
+                setScore();
 
                 showNextQuestion();
             }
@@ -96,8 +92,7 @@ public class MainActivity extends AppCompatActivity {
         btnEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finalScoreView.setText("Final Score: " + Integer.toString(score) + "\nPercentage: "  + Integer.toString(score) + "%");
-                finalScoreView.setVisibility(finalScoreView.VISIBLE);
+                setFinalScore();
                 examEnded = true;
 
                 if (cTimer != null) {
@@ -114,8 +109,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             public void onFinish() {
-                finalScoreView.setText("Final Score: " + Integer.toString(score) + "\nPercentage: "  + Integer.toString(score) + "%");
-                finalScoreView.setVisibility(finalScoreView.VISIBLE);
+                setFinalScore();
                 examEnded = true;
             }
         }.start();
@@ -154,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
         radioOption4 = (RadioButton)findViewById(R.id.radio_option4);
 
         resetText();
-        scoreView.setText("Score: " + Integer.toString(score));
+        setScore();
         timeView.setText("Remaining time: " + String.valueOf(time) + "s");
     }
 
@@ -171,7 +165,21 @@ public class MainActivity extends AppCompatActivity {
         radioOption3.setText(allQuestions[currentQuestion].getOption3());
         radioOption4.setText(allQuestions[currentQuestion].getOption4());
     }
-
+    public void setScore() {
+        if (score < 0) {
+            scoreView.setText("Score: 0");
+        } else {
+            scoreView.setText("Score: " + Integer.toString(score));
+        }
+    }
+    public void setFinalScore() {
+        if (score < 0) {
+            finalScoreView.setText("Final Score: 0\nPercentage: 0%");
+        } else {
+            finalScoreView.setText("Final Score: " + Integer.toString(score) + "\nPercentage: "  + Integer.toString(score) + "%");
+        }
+        finalScoreView.setVisibility(finalScoreView.VISIBLE);
+    }
     private void validateAnswer () {
         int correctAnswer = allQuestions[currentQuestion].getCorrectOption();
         if( correctAnswer == 1) {
@@ -203,8 +211,6 @@ public class MainActivity extends AppCompatActivity {
                 score -= 1;
             }
         }
-        if (score < 0 ) {
-            score = 0;
-        }
+
     }
 }
