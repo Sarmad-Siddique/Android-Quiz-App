@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <string-array name="questions">
+        <item>Q-1: What is the capital of France?</item>
+        <item>Berlin</item>
+        <item>Madrid</item>
+        <item>Paris</item>
+        <item>Rome</item>
+
+        <item>Q-2: Which planet is known as the Red Planet?</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Venus</item>
+        <item>Jupiter</item>
+
+        <item>Q-3: Who wrote the play \'Romeo and Juliet\'?</item>
+        <item>William Shakespeare</item>
+        <item>Mark Twain</item>
+        <item>Charles Dickens</item>
+        <item>George Orwell</item>
+
+        <item>Q-4: Which is the largest ocean on Earth?</item>
+        <item>Atlantic Ocean</item>
+        <item>Indian Ocean</item>
+        <item>Pacific Ocean</item>
+        <item>Southern Ocean</item>
+
+        <item>Q-5: What is the chemical symbol for water?</item>
+        <item>O</item>
+        <item>H</item>
+        <item>H2O</item>
+        <item>CO2</item>
+
+        <item>Q-6: Which country hosted the 2016 Summer Olympics?</item>
+        <item>China</item>
+        <item>Brazil</item>
+        <item>United States</item>
+        <item>Japan</item>
+
+        <item>Q-7: Who painted the Mona Lisa?</item>
+        <item>Vincent van Gogh</item>
+        <item>Pablo Picasso</item>
+        <item>Leonardo da Vinci</item>
+        <item>Michelangelo</item>
+
+        <item>Q-8: What is the hardest natural substance on Earth?</item>
+        <item>Gold</item>
+        <item>Iron</item>
+        <item>Diamond</item>
+        <item>Silver</item>
+
+        <item>Q-9: How many continents are there on Earth?</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+
+        <item>Q-10: What is the largest mammal in the world?</item>
+        <item>Elephant</item>
+        <item>Blue Whale</item>
+        <item>Shark</item>
+        <item>Giraffe</item>
+
+        <item>Q-11: Which country is known as the Land of the Rising Sun?</item>
+        <item>China</item>
+        <item>Japan</item>
+        <item>South Korea</item>
+        <item>Thailand</item>
+
+        <item>Q-12: What is the main ingredient in guacamole?</item>
+        <item>Tomato</item>
+        <item>Onion</item>
+        <item>Avocado</item>
+        <item>Lettuce</item>
+
+        <item>Q-13: Which element does \'O\' represent on the periodic table?</item>
+        <item>Oxygen</item>
+        <item>Osmium</item>
+        <item>Oganesson</item>
+        <item>Oxide</item>
+
+        <item>Q-14: Which country is famous for its tulips and windmills?</item>
+        <item>Germany</item>
+        <item>Netherlands</item>
+        <item>Belgium</item>
+        <item>France</item>
+
+        <item>Q-15: Who invented the telephone?</item>
+        <item>Alexander Graham Bell</item>
+        <item>Thomas Edison</item>
+        <item>Nikola Tesla</item>
+        <item>James Watt</item>
+
+        <item>Q-16: What is the smallest planet in our solar system?</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Mars</item>
+        <item>Pluto</item>
+
+        <item>Q-17: How many rings are there on the Olympic flag?</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+
+        <item>Q-18: What is the name of the longest river in the world?</item>
+        <item>Amazon</item>
+        <item>Nile</item>
+        <item>Yangtze</item>
+        <item>Mississippi</item>
+
+        <item>Q-19: Which gas do plants absorb from the atmosphere?</item>
+        <item>Oxygen</item>
+        <item>Carbon Dioxide</item>
+        <item>Nitrogen</item>
+        <item>Hydrogen</item>
+
+        <item>Q-20: What is the square root of 64?</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+
+    </string-array>
+
+
+</resources>
