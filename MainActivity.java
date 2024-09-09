@@ -83,9 +83,9 @@ public class MainActivity extends AppCompatActivity {
                 if (allQuestions[currentQuestion].isAnswered() || examEnded) {
                     return;
                 }
-//                if (radioOptions.getCheckedRadioButtonId() == -1) {
-//                    return;
-//                }
+                if (radioOptions.getCheckedRadioButtonId() == -1) {
+                    return;
+                }
                 allQuestions[currentQuestion].setAnswered(true);
                 validateAnswer();
                 scoreView.setText("Score: " + Integer.toString(score));
